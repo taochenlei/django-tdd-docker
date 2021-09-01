@@ -15,3 +15,7 @@ RUN pip install -r requirements.txt
 
 # add app
 COPY . .
+
+# set working directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
