@@ -3,11 +3,8 @@ from django.contrib.auth.admin import UserAdmin as DefaultUserAdmin
 
 from .models import CustomUser, Movie
 
+
 # Register your models here.
-
-
-
-
 @admin.register(CustomUser)
 class UserAdmin(DefaultUserAdmin):
     pass
