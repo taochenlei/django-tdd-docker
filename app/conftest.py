@@ -37,3 +37,4 @@ def foo():
     # set up code
     yield "bar"
     # tear down code
+    
