@@ -22,13 +22,11 @@ def django_db_setup():
         # "PORT": os.environ["DB_TEST_PORT"],
         # "USER": os.environ["DB_TEST_USER"],
         # "PASSWORD": os.environ["DB_TEST_PASSWORD"],
-
         "HOST": os.environ.get("SQL_HOST", "localhost"),
         "NAME": os.environ.get("SQL_DATABASE", os.path.join(BASE_DIR, "db.sqlite3")),
         "PORT": os.environ.get("SQL_PORT", "5432"),
         "USER": os.environ.get("SQL_USER", "user"),
         "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
-
     }
 
 
@@ -37,4 +35,3 @@ def foo():
     # set up code
     yield "bar"
     # tear down code
-    
